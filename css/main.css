@@ -96,11 +96,48 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+    background-image: url("../img/te_background.jpg");
+}
+.navbar{
+    background-image: url("../img/wc_background.jpg");
+    background-size: contain;
+}
+.navbar-nav{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    
+}
+
+.tt{
+    background-color: #0f4583;
+}
+
+.test{
+    margin-left: 2%; 
+}
+
+.wcuplogo{
+    width: 40%;
+    height: 40%;
+} 
+
+.nav-item{
+    margin-right: 10%;
+}
 
 
+.nav-link{
+    color: white;
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+    transition: 1s;
+}
 
-
-
+.nav-link:hover{
+    color: red;
+}
 
 
 
