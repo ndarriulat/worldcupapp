@@ -102,9 +102,16 @@ body{
 .navbar{
     background-image: url("../img/wc_background.jpg");
     background-size: contain;
+    position: fixed; !important;
+    top:0%;
+    width: 100%;
+    height: 10vh;
+    z-index: 1;
+    
+    
 }
 .navbar-nav{
-    margin: 0;
+    margin: 0 0 0 5vw;
     padding: 0;
     width: 350px;
     
@@ -112,15 +119,18 @@ body{
 
 .tt{
     background-color: #0f4583;
+    
 }
-
+.testing{
+   
+}
 .test{
     margin-left: 2%; 
 }
 
 .wcuplogo{
-    width: 40%;
-    height: 40%;
+    width: 8vh;
+    height: 8vh;
 } 
 
 .nav-item{
@@ -130,7 +140,7 @@ body{
 
 .nav-link{
     color: white;
-    font-size: 0.9em;
+    font-size: 1.0em;
     font-family: 'Raleway', sans-serif;
     transition: 1s;
 }
@@ -139,11 +149,130 @@ body{
     color: red;
 }
 
+.general{
+   margin-top: 5%;
+   padding-bottom: 10%;
+
+    
+    
+}
 
 
+.group__container:nth-child(odd){
+    border:solid #C4C4C4 1px;
+    border-radius: 5px;
+    height: 250px;
+    margin-left: 4.16%;
+    margin-top: 50px;
+    
+
+    
+}
+.group__container:nth-child(even){
+    border:solid #C4C4C4 1px;
+    border-radius: 5px;
+    height: 250px;
+    margin-top: 50px;
+}
 
 
+.group__team__text{
+    font-size: 1.0em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
 
+.row{
+  height: 100%;  
+}
+
+.testt{
+    text-align: center !important;
+    
+}
+.group__tittle{
+    margin-top:3%;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.group__table{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.0em;
+    
+    line-height: 200%;
+    
+}
+.group__row:last-child{
+    border: none;
+}
+
+.group__header{
+    border-bottom: 1px solid grey;
+    
+}
+
+.group__header:last-child{
+    border-right: none;
+}
+
+.group__header:nth-child(2){
+    width: 10%;
+}
+
+.group__header:nth-child(3){
+    width: 10%;
+}
+.group__header:nth-child(4){
+    width: 10%;
+}
+
+.group__team{
+    font-size: 1.0em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.group__team__img{
+    width: 30px;
+    height: 20px;
+    border-radius: 2px;
+    margin-left: 5px;
+    border: 1px solid darkgoldenrod;
+        
+}
+
+.homepage__intro{
+    width: 100%;
+    height: 85vh;
+    background-image: url("https://pbs.twimg.com/profile_background_images/626100471086850049/8WBVDw0m.jpg");
+    margin-top:10vh;
+    display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-attachment: fixed;
+    background-size: cover;
+}
+
+.homepage__intro__box{
+    display: block;
+    text-align: center;
+    margin-top: 5vh;
+}
+.homepage__intro__header{
+    color: red;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+.homepage__intro__text{
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    
+
+}
 
 
 
