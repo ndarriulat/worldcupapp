@@ -12,7 +12,7 @@ def index(request):
     #teams_list = Team.objects.order_by('-group_number').reverse()
     #output = ', '.join([t.name for t in teams_list])
     #return HttpResponse(output)
-    template = loader.get_template('worldcupapp/login_admin.html')
+    template = loader.get_template('worldcupapp/create_account.html')
     #context = {
         # information about user
     #}
@@ -34,3 +34,14 @@ def login_admin(request):
         #not OK
         template = loader.get_template('worldcupapp/fail.html')
     return HttpResponse(template.render(context, request))
+
+
+@csrf_exempt
+def create_account(request):
+    uname = request.POST['username']
+    pwd = request.POST['pwd1']
+    try:
+        user = User.objects.create_user(username=uname, email=None, password=pwd)
+        return HttpResponse('Account created successfully!')
+    except ValueError:
+        return HttpResponse('Could not create the account')
