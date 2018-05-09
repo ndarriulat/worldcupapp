@@ -30,13 +30,7 @@ def login_admin(request):
         login(request, user)
         #OK!
         template = loader.get_template('worldcupapp/sucess.html')
-
-        #return HttpResponse(template.render(context, request))
     else:
         #not OK
         template = loader.get_template('worldcupapp/fail.html')
-        #context = {
-        #    'obtained_name':  username,
-        #}
     return HttpResponse(template.render(context, request))
-        # render(request, 'votacao/index.html', context)
