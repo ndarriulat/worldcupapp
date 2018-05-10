@@ -13,7 +13,7 @@ def index(request):
     #teams_list = Team.objects.order_by('-group_number').reverse()
     #output = ', '.join([t.name for t in teams_list])
     #return HttpResponse(output)
-    template = loader.get_template('worldcupapp/login_admin.html')
+    template = loader.get_template('worldcupapp/index.html')
     #context = {
         # information about user
     #}
@@ -31,7 +31,7 @@ def login_admin(request):
         if user.is_superuser:
             login(request, user)
             #OK!
-            template = loader.get_template('worldcupapp/login_admin.html')
+            template = loader.get_template('worldcupapp/index.html')
         else:
             template = loader.get_template('worldcupapp/not_admin.html')
     else:
