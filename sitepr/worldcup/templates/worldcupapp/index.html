@@ -35,7 +35,7 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Log in</a>
+                            <a class="nav-link" href="login_admin">Log in</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Create account</a>
@@ -69,7 +69,10 @@
                    
                     </form>
         </div>
-        
+
+        {% if obtained_name %}
+            <a>username: {{ obtained_name }}</a>
+        {% endif%}
          <div class="homepage__intro">
                 <img src="" class="homepage__intro__img">
                 <div class="homepage__intro__box">

@@ -21,6 +21,11 @@ def index(request):
 
 @csrf_exempt
 def login_admin(request):
+    template = loader.get_template('worldcupapp/login_admin.html')
+    return HttpResponse(template.render())
+
+@csrf_exempt
+def submit_login_admin(request):
     username = request.POST['username']
     password = request.POST['password']
     user = authenticate(username=username, password=password)
