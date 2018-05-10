@@ -6,6 +6,9 @@ class Team(models.Model):
     name = models.CharField(max_length=200)
     group_number = models.IntegerField(default=0)
     points = models.IntegerField(default=0)
+    victories = models.IntegerField(default=0)
+    draws = models.IntegerField(default=0)
+    losses = models.IntegerField(default=0)
 
 # Result. Contains two teams and their score
 class Result(models.Model):
