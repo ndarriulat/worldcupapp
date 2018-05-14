@@ -99,6 +99,10 @@ textarea {
 body{
     background-image: url("../img/te_background.jpg");
 }
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
 .navbar{
     background-image: url("../img/wc_background.jpg");
     background-size: contain;
@@ -113,8 +117,12 @@ body{
 .navbar-nav{
     margin: 0 0 0 5vw;
     padding: 0;
-    width: 350px;
-    
+}
+
+.nav-spe{
+    position: absolute;
+    right: 5vw;
+    width: 100px;
 }
 
 .tt{
@@ -135,6 +143,8 @@ body{
 
 .nav-item{
     margin-right: 10%;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -157,7 +167,7 @@ body{
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     .navbar__mobile{
         display: block;
     }
@@ -174,53 +184,117 @@ body{
 
 .menu{
     width: 100%;
-    height: 25vh;
-    background-color: blue;
-    opacity: 0.2;
-    position: absolute;
-    display: none;
-}
-
-.form-group{
-	margin-bottom: 15px;
-}
-
-label{
-	margin-bottom: 15px;
-}
-
-input,
-input::-webkit-input-placeholder {
-    font-size: 11px;
-    padding-top: 3px;
-}
-
-.main-login{
+    height: 23vh;
+    background-color: #052357;
+    opacity: 1;
     position: fixed;
-    z-index: 2;
-    left: 30%;
-    right: 30%;
- 	background-color: #fff;
-    /* shadows and rounded borders */
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-
+    display: none;
+    z-index: 1;
 }
 
-.main-center{
- 	margin-top: 30px;
- 	margin: 0 auto;
-    width: 40%;
-    padding: 40px 40px;
-}
-.input-group{
-    justify-content: center;
+.menu__list{
+    text-align: center;
+    margin: 2.5vh 0 2.5vh 0;
+    padding: 0;
+    height: 15vh;
+    
 }
 
+.menu__list__item{
+    margin-bottom: 10px;
+    color: white;
+}
+.menu__list__link{
+    color: white;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-family: 'Raleway', sans-serif;
+    transition: 1s;
+    padding: 0;
+}
+
+.menu__list__link:hover{
+    color: red;
+}
+
+.login-page {
+  width: 360px;
+}
+
+.tte{
+  position: fixed;
+  top:30%;
+  left: 35vw;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 30vw;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  display: none;
+}
+
+
+.ttte{
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.form {
+  padding: 45px;
+  
+}
+
+@media only screen and (max-width: 600px) {
+    .tte {
+        width: 100vw;  
+        left: 0;
+        top: 40%;
+    }
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
 
 
 
